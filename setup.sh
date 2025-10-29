@@ -1,5 +1,7 @@
 !#/bin/bash
 
+sudo dnf install wget curl flatpak -y
+
 yes | flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 yes | sudo dnf install \
