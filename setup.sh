@@ -20,6 +20,8 @@ sudo dnf swap mesa-vdpau-drivers mesa-vdpau-drivers-freeworld -y
 sudo dnf swap mesa-va-drivers.i686 mesa-va-drivers-freeworld.i686 -y
 sudo dnf swap mesa-vdpau-drivers.i686 mesa-vdpau-drivers-freeworld.i686 -y
 
+sudo dnf update -y
+
 sudo dnf install appimagelauncher steam heroic-games-launcher lutris -y
 
 flatpak install flathub org.onlyoffice.desktopeditors -y
