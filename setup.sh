@@ -22,7 +22,10 @@ sudo dnf swap mesa-vdpau-drivers.i686 mesa-vdpau-drivers-freeworld.i686 -y
 
 sudo dnf update -y
 
-sudo dnf install appimagelauncher steam heroic-games-launcher lutris -y
+sudo dnf install steam  lutris -y
+
+sudo dnf copr enable langdon/appimagelauncher -y
+sudo dnf install appimagelauncher -y
 
 flatpak install flathub org.onlyoffice.desktopeditors -y
 
@@ -47,6 +50,8 @@ flatpak install flathub org.kde.kdenlive -y
 flatpak install flathub net.davidotek.pupgui2 -y
 
 flatpak install flathub one.ablaze.floorp -y 
+
+flatpak install flathub com.heroicgameslauncher.hgl
 
 mkdir -p ~/Applications
 
