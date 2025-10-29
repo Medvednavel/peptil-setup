@@ -51,7 +51,7 @@ flatpak install flathub net.davidotek.pupgui2 -y
 
 flatpak install flathub one.ablaze.floorp -y 
 
-flatpak install flathub com.heroicgameslauncher.hgl
+flatpak install flathub com.heroicgameslauncher.hgl -y
 
 mkdir -p ~/Applications
 
