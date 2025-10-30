@@ -36,7 +36,7 @@ user_uid=$(id -u "$user")
 user_gid=$(id -g "$user")
 
 # Назначаем владельца и группу точки монтирования
-#sudo chown "$user_uid:$user_gid" "$mount_point"
+sudo chown "$user_uid:$user_gid" "$mount_point"
 echo "Назначены права владельца $user для $mount_point"
 
 # Проверяем, есть ли уже запись в fstab
