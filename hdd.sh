@@ -40,9 +40,9 @@ user_gid=$(id -g "$user")
 echo "Назначены права владельца $user для $mount_point"
 
 # Проверяем, есть ли уже запись в fstab
-if ! grep -q "$uuid" /ets/fstab; then
+if ! grep -q "$uuid" /etс/fstab; then
     # Добавляем запись в fstab с опцией nofail
-    echo "UUID=$uuid $mount_point ext4 defaults,nofail,uid=$user_uid,gid=$user_gid 0 2" | sudo tee -a /ets/fstab > /dev/null
+    echo "UUID=$uuid $mount_point ext4 defaults,nofail,uid=$user_uid,gid=$user_gid 0 2" | sudo tee -a /etс/fstab > /dev/null
     echo "Добавлена запись для диска $disk ($uuid) в /etc/fstab"
 else
     echo "Запись для диска $disk ($uuid) уже существует в /etc/fstab"
