@@ -24,7 +24,7 @@ sudo dnf update -y
 
 sudo dnf install steam  lutris -y
 
-sudo dnf copr enable langdon/appimagelauncher -y
+yes | sudo dnf copr enable langdon/appimagelauncher 
 sudo dnf install appimagelauncher -y
 
 flatpak install flathub org.onlyoffice.desktopeditors -y
